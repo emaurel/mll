@@ -1,0 +1,80 @@
+{
+	"scopeName": "source.mll",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.mll",
+					"match": "//.*$"
+				},
+				{
+					"name": "comment.block.mll",
+					"begin": "/\\*",
+					"end": "\\*/",
+					"patterns": [
+						{
+							"match": "\\bTODO\\b",
+							"name": "keyword.todo.mll"
+						}
+					]
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"match": "\\b(int|float|string|bool|char|double|void)\\b",
+					"name": "storage.type.mll"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"match": "\\b(if|else|while|return|func)\\b",
+					"name": "keyword.control.mll"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"begin": "\"",
+					"end": "\"",
+					"name": "string.quoted.double.mll",
+					"patterns": [
+						{
+							"match": "\\\\.",
+							"name": "constant.character.escape.mll"
+						}
+					]
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"match": "\\b\\d+\\b",
+					"name": "constant.numeric.mll"
+				}
+			]
+		}
+	}
+}

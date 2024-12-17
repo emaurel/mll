@@ -1,0 +1,14 @@
+{
+    "iconDefinitions": {
+      "mll-file-icon": {
+        "iconPath": "./mll-icon.png"
+      }
+    },
+    "fileExtensions": {
+      "mll": "mll-file-icon"
+    },
+    "fileNames": {},
+    "languageIds": {
+      "mll": "mll-file-icon"
+    }
+  }

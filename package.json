@@ -1,0 +1,41 @@
+{
+  "name": "mll",
+  "displayName": "multiple language language",
+  "description": "babage",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "mll",
+        "aliases": [
+          "Multiple Language Language",
+          "mll"
+        ],
+        "extensions": [
+          ".mll"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mll",
+        "scopeName": "source.mll",
+        "path": "./syntaxes/mll.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "mll-icons",
+        "label": "MLL Icons",
+        "path": "./resources/mll-icon-theme.json"
+      }
+    ]
+  }
+}
